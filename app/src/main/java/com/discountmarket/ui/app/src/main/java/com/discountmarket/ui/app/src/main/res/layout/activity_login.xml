@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:text="بازار تخفیف"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1E1E1E"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:text="ورود به حساب کاربری"
+        android:textSize="16sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/typeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/storeRadio"
+            android:text="فروشگاه"
+            android:textColor="#1E1E1E"
+            android:checked="true"
+            android:layout_marginEnd="16dp"/>
+
+        <RadioButton
+            android:id="@+id/customerRadio"
+            android:text="مشتری"
+            android:textColor="#1E1E1E"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/phoneInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="شماره تلفن"
+        android:inputType="phone"
+        android:textColor="#1E1E1E"
+        android:backgroundTint="#C0C0C0"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="رمز عبور"
+        android:inputType="textPassword"
+        android:textColor="#1E1E1E"
+        android:backgroundTint="#C0C0C0"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ورود"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1E1E1E"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/goToRegisterBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ثبت‌نام"
+        android:textColor="#1E1E1E"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+</LinearLayout>
