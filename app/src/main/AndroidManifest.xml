@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="بازار تخفیف"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DiscountMarket">
+
+        <activity android:name=".ui.SplashActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ui.StoreDashboardActivity" />
+        <activity android:name=".ui.CustomerDashboardActivity" />
+        <activity android:name=".ui.MarketplaceActivity" />
+        <activity android:name=".ui.GenerateDiscountActivity" />
+        <activity android:name=".ui.WalletActivity" />
+        <activity android:name=".ui.QrScannerActivity" />
+        <activity android:name=".ui.AdminPanelActivity" />
+    </application>
+</manifest>
